@@ -19,8 +19,6 @@ compatible = "zmk,combos";
 
 COMBO(mute, &kp C_MUTE, 10 14, 1, 50)
 
-//layer toggles
-COMBO(plover, &tog PLO, 0 9, 0 8, 40)
 
 //horizontal left hand 
 COMBO(backtab, &kp LS(LC(TAB)), 1 2, 0 1 2 3 4, 20)
