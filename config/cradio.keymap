@@ -109,7 +109,7 @@
 		bindings = <
         &none &none &none &none &none       						&kp INS	&kp PG_DN &kp PG_UP &kp BSPC &kp DEL
      	&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT   &kp LC(G)  		&kp LEFT &kp DOWN &kp UP &kp RIGHT &kp ENTER
-        &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)  &kp K_APP        &kp HOME &kp TAB &none	 &kp END	&none
+        &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)  &kp K_APP          &kp HOME &kp TAB  &none	 &kp END   i &none
                                             &none &skq LSHFT        &skq LS(LC(LALT)) &trans
         >;
 		};
@@ -136,8 +136,8 @@
             fun_layer {
 		bindings = <
 		&bt BT_CLR   &none        &none        &none        &bootloader     &bootloader  &kp F7  &kp F8  &kp F9 &kp F10
-		&sk LGUI     &sk LALT     &sk LCTRL    &sk LSHFT    &sys_reset           &sys_reset      &kp F4  &kp F5  &kp F6 &kp F11
-		&bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &none      		&none 		&kp F1  &kp F2  &kp F3 &kp F12  
+		&sk LGUI     &sk LALT     &sk LCTRL    &sk LSHFT    &sys_reset      &sys_reset   &kp F4  &kp F5  &kp F6 &kp F11
+		&bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &none      		&none 		 &kp F1  &kp F2  &kp F3 &kp F12  
 					                    &none &none                   		&none &none
 		>;
 		};
