@@ -101,39 +101,20 @@
 		&kp Q 		&kp W 		&kp F 		 &kp P 		  &kp B 			&kp J &kp L 	   &kp U 		&kp Y 		&kp APOS 
 		&bhm LGUI A &bhm LALT R &bhm LCTRL S &bhm LSHFT T &kp G 			&kp M &bhm LSHFT N &bhm LCTRL E &bhm LALT I &bhm LGUI O
 		&kp Z 		&kp X 		&kp C 		 &kp D 		  &kp V				&kp K &kp H 	   &com_semi    &dot_colon  &ques_excl
-          									  &sl NAV &skq LSHFT            &lt SYM SPC &sl NUM
+          									  &sl NAV &skq LSHFT            &kp SPC &sl FUN
 		>;
 		};
 
        		nav_layer {
 		bindings = <
-        &none &none &none &none &none       						&kp INS	&kp PG_DN &kp PG_UP &kp BSPC &kp DEL
-     	&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT   &kp LC(G)  		&kp LEFT &kp DOWN &kp UP &kp RIGHT &kp ENTER
-        &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)  &kp K_APP          &kp HOME &kp TAB  &none	 &kp END   i &none
-                                            &none &skq LSHFT        &skq LS(LC(LALT)) &trans
+        &none 		&kp N7 		 &kp N8 	   &kp N9 		&none			&kp INS	 &kp PG_DN 		 &kp PG_UP 	   &kp BSPC 	   &kp DEL
+     	&bhm LGUI 0 &bhm LALT N4 &bhm LCTRL N5 &bhm LSHFT T &trans 			&kp LEFT &bhm LSHFT DOWN &bhm LCTRL UP &bhm LALT RIGHT &bhm LGUI ENTER
+        &none 		&kp N1 		 &kp N2  	   &kp N3       &none           &kp HOME &kp TAB  		 &none	 	   &kp END   	   &none
+                                            	&trans &skq LS(LC(LALT))    &trans &trans
         >;
 		};
-		
-		    num_layer {
-		bindings = <
-		&none &kp N7 &kp N8 &kp N9 &none 						&none &none &none &none &none 
-		&kp N0 &kp N4 &kp N5 &kp N6 &none						&none &sk LSHIFT &sk LCTRL &sk LALT &sk LGUI
-		&none &kp N1 &kp N2  &kp N3 &none						&none &none &none &none &none 
-							&sl NAV &skq LSHFT                   &lt SYM SPC &sl NUM
-		>;
-		};	
-
-		
-		    sym_layer {
-		bindings = <
-		&kp ESC   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    	&kp EQUAL  &kp LC(LEFT)  &kp CARET &kp LC(RIGHT) &none 
-		&kp GRAVE &kp LBKT  &kp LBRC  &kp LPAR  &kp LT 	        &kp PLUS   &kp AMPS      &kp ASTRK &kp COLON     &kp SEMI
-		&kp TILDE &kp RBKT  &kp RBRC  &kp RPAR  &kp GT   		&kp MINUS  &kp UNDER     &kp BSLH  &kp PIPE      &kp SLASH
-					                	&trans  &sl FUN      	&trans &trans 
-		>;
-		};	
-
-            fun_layer {
+			
+			fun_layer {
 		bindings = <
 		&bt BT_CLR   &none        &none        &none        &bootloader     &bootloader  &kp F7  &kp F8  &kp F9 &kp F10
 		&sk LGUI     &sk LALT     &sk LCTRL    &sk LSHFT    &sys_reset      &sys_reset   &kp F4  &kp F5  &kp F6 &kp F11
