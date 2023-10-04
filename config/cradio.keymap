@@ -86,10 +86,10 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
         keymap {
                 compatible = "zmk,keymap";
                 
-       		alpha_layer {
+       		def_layer {
 		bindings = <
 		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L &kp U &kp Y &kp APOS 
-		&hrm LGUI A &hmr LALT R &hmr LCTRL S &hmr LSHFT T &kp G 			        	&kp M &hmr LSHFT N &hrm LCTRL E &hrm LALT I &hmr LGUI O
+		&hrm LGUI A &hrm LALT R &hrm LCTRL S &hrm LSHFT T &kp G 			        	&kp M &hrm LSHFT N &hrm LCTRL E &hrm LALT I &hrm LGUI O
 		&kp Z &kp X &kp C &kp D &kp V				        &kp K &kp H &comma_morph &dot_morph &qexcl 
           				&sl NUM &ss_cw                   &kp SPACE &sl NAV
 		>;
