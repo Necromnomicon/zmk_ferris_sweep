@@ -24,8 +24,8 @@
 #define NAV 1
 #define NUM 2
 #define FUN 3
-#define GAME 4
-#define GAME2 5
+#define GM1 4
+#define GM2 5
 
 #include "combos.dtsi"  // requires layer aliases
 /* Global settings */
