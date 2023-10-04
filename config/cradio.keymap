@@ -101,16 +101,16 @@
 		&kp Q 		&kp W 		&kp F 		 &kp P 		  &kp B 			&kp J &kp L 	   &kp U 		&kp Y 		&kp APOS 
 		&bhm LGUI A &bhm LALT R &bhm LCTRL S &bhm LSHFT T &kp G 			&kp M &bhm LSHFT N &bhm LCTRL E &bhm LALT I &bhm LGUI O
 		&kp Z 		&kp X 		&kp C 		 &kp D 		  &kp V				&kp K &kp H 	   &com_semi    &dot_colon  &ques_excl
-          									  &sl NAV &skq LSHFT            &kp SPC &sl FUN
+          									  &sl NAV &skq LSHFT            &kp SPC &mo FUN
 		>;
 		};
 
        		nav_layer {
 		bindings = <
         &none 		&kp N7 		 &kp N8 	   &kp N9 		&none			&kp INS	 &kp PG_DN 		 &kp PG_UP 	   &kp BSPC 	   &kp DEL
-     	&bhm LGUI 0 &bhm LALT N4 &bhm LCTRL N5 &bhm LSHFT T &trans 			&kp LEFT &bhm LSHFT DOWN &bhm LCTRL UP &bhm LALT RIGHT &bhm LGUI ENTER
+     	&bhm LGUI 0 &bhm LALT N4 &bhm LCTRL N5 &bhm LSHFT N6 &trans 			&kp LEFT &bhm LSHFT DOWN &bhm LCTRL UP &bhm LALT RIGHT &bhm LGUI ENTER
         &none 		&kp N1 		 &kp N2  	   &kp N3       &none           &kp HOME &kp TAB  		 &none	 	   &kp END   	   &none
-                                            	&trans &skq LS(LC(LALT))    &trans &trans
+                                            	&trans &skq LS(LC(LALT))    321xc12345tttt&trans &trans
         >;
 		};
 			
