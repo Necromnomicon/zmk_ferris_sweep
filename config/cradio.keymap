@@ -93,6 +93,22 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
     bindings = <&kp QMARK>, <&kp EXCL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+// tap: num-word | double-tap: sticky num-layer | hold: num-layer
+#define SMART_NUM &smart_num NUM 0
+ZMK_BEHAVIOR(smart_num, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&num_dance>;
+)
+ZMK_BEHAVIOR(num_dance, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&num_word>, <&sl NUM>;  // reverse this for sticky-num on single tap
+)
+&num_word {  // num-word, requires PR #1451
+    layers = <NUM>;
+    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+};
 
 
 /{
@@ -104,7 +120,7 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
 		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L &kp U &kp Y &kp APOS 
 		&hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T &kp G 			        	&kp M &hmr LSHFT N &hmr LCTRL E &hmr LALT I &hmr LGUI O
 		&kp Z &kp X &kp C &kp D &kp V				        &kp K &kp H &comma_morph &dot_morph &qexcl 
-          				&sl NUM &ss_cw                   &kp SPACE &sl NAV
+          				SMART_NUM &ss_cw                   &kp SPACE &sl NAV
 		>;
 		};
 
