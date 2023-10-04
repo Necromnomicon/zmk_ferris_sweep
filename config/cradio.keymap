@@ -111,6 +111,8 @@ ZMK_BEHAVIOR(num_dance, tap_dance,
 };
 
 
+#define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
+
 /{
         keymap {
                 compatible = "zmk,keymap";
@@ -138,7 +140,7 @@ ZMK_BEHAVIOR(num_dance, tap_dance,
 		&kp TAB   &kp BSPC  &kp DEL    &kp DLLR    &kp PRCNT   	            	&kp EQUAL  &kp N7 &kp N8 &kp N9 &kp COMMA 
 		&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT   &kp LC(G) 					&kp PLUS   &kp N4 &kp N5 &kp N6 &kp ASTRK
 		&kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V)   &kp K_APP  		       		&kp MINUS  &kp N1 &kp N2 &kp N3 &kp SLASH
-					                        &trans &trans           &kp N0  &kp DOT
+					                        &trans CANCEL           &kp N0  &kp DOT
 		>;
 		};	
 
