@@ -111,7 +111,7 @@ ZMK_BEHAVIOR(num_dance, tap_dance,
 };
 
 ZMK_BEHAVIOR(tbat, hold_tap,
-	flavor= "tap-prefferd";
+	flavor= "tap-preferred";
 	tapping-term-ms = <200>;
 	quick-tap-ms = <QUICK_TAP_MS>;
 	bindings = <&kp>, &kp>;
