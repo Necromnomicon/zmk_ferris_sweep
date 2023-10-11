@@ -144,10 +144,10 @@ ZMK_BEHAVIOR(tbat, hold_tap,
 		
 		    num_layer {
 		bindings = <
-		&kp TAB   &none  	&none	   &none       &none   	            		&kp DEL    &kp N7 &kp N8 &kp N9 &kp BSPC 
-		&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT   &kp LC(G) 					&kp PLUS   &kp N4 &kp N5 &kp N6 &kp N0
+		&kp TAB   &none  	&none	   &none       CANCEL  	            		&kp DEL    &kp N7 &kp N8 &kp N9 &kp BSPC 
+		&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT   &kp LC(G) 					&kp PLUS   &kp N4 &kp N5 &kp N6 &kp DOT 
 		&kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V)   &kp K_APP  		       		&kp MINUS  &kp N1 &kp N2 &kp N3 &kp COMMA
-					                        &trans CANCEL           &kp SPACE  &kp DOT
+					                        &trans &kp LSHIFT           &kp SPACE  &kp N0
 		>;
 		};	
 
