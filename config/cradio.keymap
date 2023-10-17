@@ -93,6 +93,17 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
     bindings = <&kp QMARK>, <&kp EXCL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+// tap: minus | shift + tap: forward slash 
+ZMK_BEHAVIOR(mindiv, mod_morph,
+    bindings = <&kp MINUS>, <&kp FSLH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: plus | shift + tap: asterix 
+ZMK_BEHAVIOR(plumul, mod_morph,
+    bindings = <&kp PLUS>, <&kp STAR>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 // tap: num-word | double-tap: sticky num-layer | hold: num-layer
 #define SMART_NUM &smart_num NUM 0
 ZMK_BEHAVIOR(smart_num, hold_tap,
@@ -144,9 +155,9 @@ ZMK_BEHAVIOR(tbat, hold_tap,
 		
 		    num_layer {
 		bindings = <
-		&kp TAB   &none  	&none	   &none       CANCEL  	            		&kp DEL    &kp N7 &kp N8 &kp N9 &kp BSPC 
-		&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT   &kp LC(G) 					&kp PLUS   &kp N4 &kp N5 &kp N6 &dot_morph 
-		&kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V)   &kp K_APP  		       		&kp MINUS  &kp N1 &kp N2 &kp N3 &comma_morph
+		&kp TAB   &none  	&none	   &none       CANCEL  	            		&kp DEL  &kp N7 &kp N8 &kp N9 &kp BSPC 
+		&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT   &kp LC(G) 					&plumul  &kp N4 &kp N5 &kp N6 &dot_morph 
+		&kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V)   &kp K_APP  		       		&mindiv  &kp N1 &kp N2 &kp N3 &comma_morph
 					                        &trans &kp LSHIFT           &kp SPACE  &kp N0
 		>;
 		};	
